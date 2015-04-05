@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
-<component:ComponentWorld xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://eclipse.org/SCADA/Configuration/Component" xmlns:exec="http://eclipse.org/SCADA/Configuration/Component/Exec" xmlns:infrastructure="http://eclipse.org/SCADA/Configuration/Infrastructure" xmlns:item="http://eclipse.org/SCADA/Configuration/Item" xmi:id="_hwAl4NogEeS7zvII02zBBA">
-  <levels xmi:id="_hwBM8NogEeS7zvII02zBBA" name="REGION1">
-    <levels xmi:id="_hwBM8dogEeS7zvII02zBBA" name="SITE1">
-      <levels xmi:id="_hwBM8togEeS7zvII02zBBA" name="SYS">
-        <components xsi:type="exec:LoadAverage" xmi:id="_hwDpMNogEeS7zvII02zBBA" name="LAVG">
-          <masterOn href="world.esim#_hv4qGNogEeS7zvII02zBBA"/>
-          <runsOn xsi:type="infrastructure:CommonDriver" href="world.esim#_hv4qFtogEeS7zvII02zBBA"/>
-        </components>
-        <levels xmi:id="_hwDpMdogEeS7zvII02zBBA" name="DRV">
-          <levels xmi:id="_hwDpMtogEeS7zvII02zBBA" name="EXEC">
-            <components xsi:type="component:DriverConnectionAnalyzer" xmi:id="_hwDpM9ogEeS7zvII02zBBA">
-              <masterOn href="world.esim#_hv4qGNogEeS7zvII02zBBA"/>
-              <driver xsi:type="infrastructure:CommonDriver" href="world.esim#_hv4qFtogEeS7zvII02zBBA"/>
-            </components>
-          </levels>
-        </levels>
-      </levels>
-    </levels>
-    <levels xmi:id="_hwDpNNogEeS7zvII02zBBA" name="SITE2">
-      <levels xmi:id="_hwDpNdogEeS7zvII02zBBA" name="SYS">
-        <components xsi:type="exec:LoadAverage" xmi:id="_hwDpNtogEeS7zvII02zBBA" name="LAVG">
-          <masterOn href="world.esim#_hv4qE9ogEeS7zvII02zBBA"/>
-          <runsOn xsi:type="infrastructure:CommonDriver" href="world.esim#_hv4qEdogEeS7zvII02zBBA"/>
-        </components>
-        <levels xmi:id="_hwDpN9ogEeS7zvII02zBBA" name="DRV">
-          <levels xmi:id="_hwDpONogEeS7zvII02zBBA" name="EXEC">
-            <components xsi:type="component:DriverConnectionAnalyzer" xmi:id="_hwDpOdogEeS7zvII02zBBA">
-              <masterOn href="world.esim#_hv4qE9ogEeS7zvII02zBBA"/>
-              <driver xsi:type="infrastructure:CommonDriver" href="world.esim#_hv4qEdogEeS7zvII02zBBA"/>
-            </components>
-          </levels>
-        </levels>
-      </levels>
-    </levels>
+<component:ComponentWorld xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://eclipse.org/SCADA/Configuration/Component" xmlns:item="http://eclipse.org/SCADA/Configuration/Item" xmi:id="_hwAl4NogEeS7zvII02zBBA">
+  <levels xmi:id="_Jo9akNsWEeSMjdxvXPKntg" name="root">
+    <components xsi:type="component:PersistentValue" xmi:id="_QqT9cNsWEeSMjdxvXPKntg" shortDescription="A variable for testing" name="persistentValue1" dataType="INT32">
+      <masterOn href="world.esim#_jZM_INsOEeSMjdxvXPKntg"/>
+    </components>
+    <components xsi:type="component:TransientValue" xmi:id="_LnM0MNurEeSMjdxvXPKntg" name="transientValue1" dataType="FLOAT">
+      <masterOn href="world.esim#_jZM_INsOEeSMjdxvXPKntg"/>
+    </components>
   </levels>
   <configurations xsi:type="component:MarkerConfiguration" xmi:id="_hwDpOtogEeS7zvII02zBBA">
     <markers xmi:id="_hwDpO9ogEeS7zvII02zBBA" name="maintenance.warning"/>

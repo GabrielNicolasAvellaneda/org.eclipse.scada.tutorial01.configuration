@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<profile:profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:profile="http://eclipse.org/SCADA/Configuration/World/OSGi/Profile" xsi:schemaLocation="http://eclipse.org/SCADA/Configuration/World/OSGi/Profile http://eclipse.org/SCADA/Configuration/World#//osgi/profile" name="Custom profile for master on node node1">
-  <start>org.h2</start>
+<profile:profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:profile="http://eclipse.org/SCADA/Configuration/World/OSGi/Profile" xsi:schemaLocation="http://eclipse.org/SCADA/Configuration/World/OSGi/Profile http://eclipse.org/SCADA/Configuration/World#//osgi/profile" name="Custom profile for master on node localhost">
   <start>org.eclipse.scada.sec.audit.log.ae</start>
   <start>org.eclipse.scada.da.buffer</start>
   <start>org.eclipse.scada.da.server.exporter.ngp</start>
@@ -63,7 +62,6 @@
   <start>org.eclipse.scada.sec.provider.plain.property</start>
   <start>org.eclipse.scada.ca.file</start>
   <start>org.eclipse.scada.ds.storage.file</start>
-  
   <property key="osgi.console.ssh">2501</property>
   <property key="org.eclipse.scada.ae.server.storage.jdbc.archiveDays">15</property>
   <property key="logback.configurationFile" eval="true">TARGET_DIR + &quot;/logback.xml&quot;</property>
